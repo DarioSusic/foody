@@ -20,7 +20,8 @@ html, body {
 }
 
 .main-header,
-.main-items {
+.main-items,
+.suggestion-item {
   border-radius: 1rem;
   box-shadow: 0px 7px 10px $border-dark;
 }
@@ -34,4 +35,28 @@ html, body {
   font-size: 1.2rem;
   font-weight: bold;
   color: $accent-color !important;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+}
+
+.body {
+  padding-top: 60px;
+}
+
+.main-items .row {
+  text-align: center;
+}
+
+.suggestion {
+  width: 100%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.suggestion-item {
+  background-color: aqua;
+  min-height: 125px;
 }
