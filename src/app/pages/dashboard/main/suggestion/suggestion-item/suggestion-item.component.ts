@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-suggestion-item',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./suggestion-item.component.scss']
 })
 export class SuggestionItemComponent implements OnInit {
+  // @Input() list: [] = [];
+
+  public list = [1, 2, 3]
 
   constructor() { }
 
