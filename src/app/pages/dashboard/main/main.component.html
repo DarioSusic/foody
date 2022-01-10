@@ -1,6 +1,51 @@
 <div class="container-fluid body h-100 w-100">
   <div class="row h-100">
-    <div class="col h-100">1</div>
+    <div class="col h-100">
+      <div class="main-user-suggestion p-4">
+        <div class="row">
+          <div class="col">
+            <h6>Zdravo Marina</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <p class="fs-5">Tvoja preporučena dnevna kalorijska količina je:</p>
+          </div>
+          <div class="col-4">
+            <p class="fs-5 text-end">2500 kcal</p>
+          </div>
+        </div>
+      </div>
+      <div class="row p-4">
+        <div class="col-6">
+          <p>Citat dana</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>- Neki kuhar</p>
+        </div>
+        <div class="col-6 todays-meals">
+          <div class="row">
+            <div class="col-10">
+              <p>Danasnji obroci</p>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-success main-screen-button">></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row p-4 main-graphs">
+        <div class="col-6">
+          <div class="pie-graph-section">
+            <app-chart></app-chart>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="bar-graph-section">
+            <app-chart></app-chart>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="col-4">
       <app-suggestion></app-suggestion>
     </div>
