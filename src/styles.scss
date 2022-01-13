@@ -6,6 +6,12 @@
 /* Importing Datepicker SCSS file. */
 @import "~ngx-bootstrap/datepicker/bs-datepicker";
 
+// Google Fonts
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap);
+
+// Font Variables
+$main-font: 'Poppins', sans-serif;
+
 $white-color: #fffefe;
 $gray-color: #f0f0f0;
 $primary-color: #35a400;
@@ -18,6 +24,7 @@ $border-dark: rgba($gray-color-shadow, 0.25);
 
 html, body {
   height: 100% !important;
+  font-family: $main-font !important;
 }
 
 .main-header,
@@ -47,7 +54,8 @@ html, body {
 }
 
 .body {
-  padding-top: 60px;
+  padding-top: 70px;
+  padding-bottom: 12px;
 }
 
 .main-items .row {
@@ -106,6 +114,15 @@ html, body {
   margin: 0;
 }
 
+.back-button {
+  color: $primary-color;
+  background-color: transparent;
+  border-color: $primary-color;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 3rem;
+}
+
 .main-user-suggestion h6 + p{
   margin-bottom: 8px !important;
 }
@@ -119,6 +136,31 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.receipt-image img {
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 1rem;
+  // transform: scale(0.85, 0.85);
+  // -ms-transform: scale(0.85, 0.85);
+  // -webkit-transform: scale(0.85, 0.85);
+}
+
+.receipt-description {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $primary-color;
+}
+
+.page-title {
+  padding-left: 1rem;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: $primary-color;
 }
 
 // .bar-graph-section {
