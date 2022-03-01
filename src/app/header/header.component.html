@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="" routerLinkActive="active">Početna</a>
+          <a class="nav-link" routerLink="/" routerLinkActive="active">Početna</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/receipts/all" routerLinkActive="active">Recepti</a>
@@ -23,29 +23,21 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/meals" routerLinkActive="active">Moji Obroci</a>
         </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdownMenuLink2"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <img
-              src="https://randomuser.me/api/portraits/women/29.jpg"
-              alt=""
-              width="25"
-              height="25"
-              class="d-inline-block align-text-top rounded-circle"
-            />
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <div ngbDropdown class="dropdown nav-menu">
+          <button ngbDropdownToggle class="btn nav-button" type="button" id="dropdownMenuButton1" aria-expanded="false">
+            <img src="https://randomuser.me/api/portraits/women/29.jpg" alt=""
+            width="25"
+            height="25"
+            class="d-inline-block align-text-top rounded-circle">
+            <span class="caret"></span></button>
+          <ul ngbDropdownMenu class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+            <li class="nav-item"><a ngbDropdownItem class="dropdown-item" routerLinkActive="active">Action</a></li>
+            <li class="nav-item"><a ngbDropdownItem class="dropdown-item" routerLinkActive="active">Another action</a></li>
+            <li class="nav-item"><a ngbDropdownItem class="dropdown-item" routerLinkActive="active">Something else here</a></li>
+            <li class="nav-item"><hr class="dropdown-divider"></li>
+            <li class="nav-item"><a ngbDropdownItem class="dropdown-item" routerLinkActive="active">Logout</a></li>
           </ul>
-        </li>
+        </div>
       </ul>
     </div>
   </div>
