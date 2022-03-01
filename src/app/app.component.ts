@@ -15,7 +15,7 @@ export class AppComponent {
   constructor (private zone: NgZone, private router: Router) {
     this.router.events.subscribe((event: any) => {
       if (event instanceof NavigationEnd) {
-        if (event.url === '/login') {
+        if (event.url === '/login' || event.url === '/register') {
           this.isLoggedIn = false;
         } else {
           this.isLoggedIn = true;
