@@ -18,6 +18,9 @@ import { ChartComponent } from './main/chart/chart.component';
     RouterModule.forChild([
       { path: '', component: MainComponent }
     ])
+  ],
+  exports: [
+    SuggestionComponent
   ]
 })
 export class DashboardModule { }

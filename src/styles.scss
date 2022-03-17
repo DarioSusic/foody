@@ -37,6 +37,7 @@ html, body {
 .pie-graph-section,
 .suggestion-item,
 .my-card,
+.my-long-card,
 .login-form input,
 .login-form select,
 .nav-menu ul {
@@ -106,12 +107,12 @@ a:active {
   margin-bottom: 1rem;
 }
 
+.my-long-card img,
 .suggestion-item img {
   object-fit: cover;
   object-position: center;
   width: 100%;
   max-height: 250px;
-  margin-bottom: 1rem;
   height: 100%;
   padding: 0;
   border: 0;

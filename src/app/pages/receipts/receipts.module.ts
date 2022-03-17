@@ -3,16 +3,20 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ReceiptComponent } from './receipt/receipt.component';
 import { AllReceiptsComponent } from './all-receipts/all-receipts.component';
+import { SharedModule } from '../shared/shared.module';
+import { DashboardModule } from '../dashboard/dashboard.module';
 
 
 
 @NgModule({
   declarations: [
     ReceiptComponent,
-    AllReceiptsComponent
+    AllReceiptsComponent,
   ],
   imports: [
     CommonModule,
+    SharedModule,
+    DashboardModule,
     RouterModule.forChild([
       { path: '', component: ReceiptComponent },
       { path: 'all', component: AllReceiptsComponent }
