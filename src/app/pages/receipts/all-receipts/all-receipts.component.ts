@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./all-receipts.component.scss']
 })
 export class AllReceiptsComponent implements OnInit {
+  public list = [1, 2, 3];
 
   constructor() { }
 

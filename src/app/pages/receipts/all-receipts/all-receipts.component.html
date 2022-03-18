@@ -1,7 +1,9 @@
 <div class="container-fluid body h-100 w-100">
   <div class="row h-100">
-    <div class="col h-100">
-      <app-long-card></app-long-card>
+    <div class="col d-flex flex-column justify-content-between h-100">
+      <div *ngFor="let item of list" class="align-self-center">
+        <app-long-card></app-long-card>
+      </div>
     </div>
     <div class="col-4">
       <app-suggestion></app-suggestion>
