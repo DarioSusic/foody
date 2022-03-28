@@ -18,7 +18,7 @@ import { DashboardModule } from '../dashboard/dashboard.module';
     SharedModule,
     DashboardModule,
     RouterModule.forChild([
-      { path: '', component: ReceiptComponent },
+      { path: ':id', component: ReceiptComponent },
       { path: 'all', component: AllReceiptsComponent }
     ])
   ]

@@ -38,6 +38,7 @@ html, body {
 .suggestion-item,
 .my-card,
 .my-long-card,
+.user-counter,
 .login-form input,
 .login-form select,
 .nav-menu ul {
@@ -209,6 +210,14 @@ a:active {
   color: $primary-color;
 }
 
+.page-subtitle {
+  padding-left: 1rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $text-color;
+}
+
 .accent-text {
   color: $primary-color;
   font-weight: 500;
@@ -299,6 +308,39 @@ select {
 .dropdown-item:hover {
   background-color: transparent !important;
   color: $primary-color !important;
+}
+
+.small-text {
+  font-size: small;
+  color: $text-color;
+}
+
+.user-counter {
+  .col:nth-child(2) {
+    border: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-style: hidden;
+    border-bottom-style: hidden;
+    border-color: rgba($gray-color-shadow, 0.1);
+  }
+}
+
+.user-counter-calories {
+  font-size: large;
+  font-weight: 500;
+
+  &.suggested {
+    color: $text-color;
+  }
+
+  &.chosen {
+    color: $accent-color;
+  }
+
+  &.remaining {
+    color: $primary-color;
+  }
 }
 
 // .bar-graph-section {
