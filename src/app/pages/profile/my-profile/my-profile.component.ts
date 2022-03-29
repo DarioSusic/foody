@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-profile.component.scss']
 })
 export class MyProfileComponent implements OnInit {
+  public list: any[] = [1, 2, 3]
 
   constructor() { }
 

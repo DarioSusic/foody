@@ -1,1 +1,45 @@
-<p>my-profile works!</p>
+<div class="container-fluid body h-100 w-100">
+  <div class="row h-100">
+    <div class="col h-100 p-4">
+      <div class="row h-25 ps-4 py-4">
+        <div class="col-5 p-0">
+          <div class="d-flex flex-column align-content-start ps-0">
+            <div class="d-flex flex-row align-content-start pb-2">
+              <button type="button" class="btn btn-success back-button"><</button>
+              <div class="d-flex align-items-center page-title">Moj Profil</div>
+            </div>
+            <h2>Moji Omiljeni Recepti</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row h-75">
+        <div class="col d-flex flex-row justify-content-between flex-md-wrap">
+          <div *ngFor="let item of list" class="align-self-start">
+            <app-cards></app-cards>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row h-100">
+        <div class="col">
+          <div class="user-profile h-100">
+            <div class="row">
+              <div class="col-12 d-flex flex-column justify-content-center p-4">
+                <h4 class="align-self-center">Marina Marković</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <img src="https://static.onecms.io/wp-content/uploads/sites/20/2022/02/11/valentines-food-deals-2.jpg" class="img-thumbnail" alt="...">
+              </div>
+              <div class="col-8">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
